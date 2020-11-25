@@ -15,7 +15,7 @@ class Buttons extends Component {
             </ol>
           </nav>
         </div>
-        <div className="row">
+        <div className="row"> 
           <div className="col-12 grid-margin stretch-card">
             <div className="card">
               <div className="card-body">
