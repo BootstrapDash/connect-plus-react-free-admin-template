@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/theme/dracula.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid documentation">
+      <div class="row">
+        <div class="col-md-3 col-xl-2 left-sidebar">
+          <div class="logo-wrapper">
+              <img src="../template/demo_1/src/assets/images/logo-dark.svg" alt="logo">
+          </div>
+          <h5 class="left-menu-title">Documentation</h5>
+          <ul class="left-menu">
+              <li><a href="#introduction"> Introduction </a></li>
+              <li><a href="#fileStructure"> File Structure </a></li>
+          </ul>
+          <h6 class="left-menu-title">Installation</h6>
+          <ul class="left-menu">
+              <li><a href="#setupEnvironment"> Setup Environment </a></li>
+              <li><a href="#templateInstallation"> Template Installation </a></li>
+          </ul>
+          <h6 class="left-menu-title">Deployment</h6>
+          <ul class="left-menu">
+              <li><a href="#deployment"> Deploy React App </a></li>
+          </ul>
+          <h6 class="left-menu-title">Basic Structure</h6>
+          <ul class="left-menu">
+              <li><a href="#appComponent"> App Component </a></li>
+              <li><a href="#navbar"> Navbar </a></li>
+              <li><a href="#leftSidebar">sidebar </a></li>
+              <li><a href="#footer"> Footer </a></li>
+          </ul>
+          <h6 class="left-menu-title">Other Information</h6>
+          <ul class="left-menu">
+              <li><a href="#customerSupport"> Customer Support </a></li>
+          </ul>
+        </div>
+        <div class="col-md-9 col-xl-10 main-panel bg-white">
+          <div class="main-panel-wrapper">
+              <h2 class="mt-2 text-center font-weight-light text-muted text-uppercase mb-4">Documentation</h2>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3 id="introduction" class="mb-4">Introduction</h3>
+                  <p>Connect Plus  Admin is a responsive React template that is based on the CSS framework Bootstrap 4 and it is built with Sass. Sass compiler makes it easier to code and customize. If you are unfamiliar with Bootstrap or Sass, visit their
+                      website and read through the documentation. All of Bootstrap components have been modified to fit the style of Connect Plus  Admin and provide a consistent look throughout the template.</p>
+                  <p>Before you start working with the template, we suggest you go through the pages that are bundled with the theme. Most of the template example pages contain quick tips on how to create or use a component which can
+                      be really helpful when you need to create something on the fly.</p>
+                  </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3 id="fileStructure" class="mb-4">File Structure</h3>
+                  <p>Once you have download the package you will see the following folder structure inside the folder.</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+Connect-plus/
+├── React
+    ├── template
+      ├── demo_1
+          ├── src/
+              ├── app/
+              ├── assets/
+                  ├── images/
+                  ├── styles/
+              ├── index.js
+          ├── public/
+          ├── .gitignore
+          ├── CHANGELOG.md
+          ├── package.json
+          ├── README.md
+    ├── CHANGELOG.md
+    ├── documentation
+
+                  </textarea>
+                </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3>Installation</h3>
+                  <h4 id="setupEnvironment" class="pt-4">Set up the Development Environment</h4>
+                  <p>Install <a href="https://nodejs.org/en/" target="_blank">Node.js and npm</a> if they are not already on your machine.</p>
+                  <h4 id="templateInstallation" class="pt-4">Template Installation</h4>
+                  <p>Go to the project directory and install the React local project dependencies.</p>
+                  <p>Run <code>npm install</code>. This command install the dependencies in the local <code>node_modules</code> folder.
+                      By default, <code>npm install</code> will install all modules listed as dependencies in <code>package.json</code>.</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">npm install</textarea>   
+                  <textarea rows="4" cols="50" class="code-non-editable">npm start</textarea>                   
+                  <p>The <code>npm start</code> command launches the server, watches your files, and rebuilds the app as you make changes to those files.
+                   </p>
+                  <p>For more detailed information to install the React application, visit this official React <a href="https://reactjs.org/docs/getting-started.html" target="_blank">documentation website</a>.</p>
+                </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3 id="deployment">Deployment</h3>
+                  <h4 class="pt-4">Deploy React app </h4>
+                  <p>For the simplest deployment, create a production build and copy the output directory to a web server.</p>
+                  <p>1. Start with the production build:</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">npm run-script build</textarea> 
+                  <p>For more detailed information to install the React application, visit <a href="https://create-react-app.dev/docs/deployment" target="_blank">Deployment website</a>.</p>
+                  <p>2. Copy everything within the output folder (build/) to a folder on the server.</p>
+                </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3>Basic Structure</h3>
+                  <h4 class="pt-4" id="appComponent">App Component</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+    
+      import React from 'react';
+      import ReactDOM from 'react-dom';
+      import { BrowserRouter } from 'react-router-dom';
+      import App from './app/App';
+      import * as serviceWorker from './serviceWorker';
+      
+      ReactDOM.render(
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      , document.getElementById('root'));
+      
+      serviceWorker.unregister();
+
+                  </textarea>
+                  <h4 class="pt-4" id="navbar">Navbar</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+
+      import React, { Component } from 'react';
+      import { Dropdown } from 'react-bootstrap';
+      import { Link } from 'react-router-dom';
+      
+      class Navbar extends Component {
+        toggleOffcanvas() {
+          document.querySelector('.sidebar-offcanvas').classList.toggle('active');
+        }
+        render () {
+          return (
+            <nav className="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+              <div className="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <Link className="navbar-brand brand-logo" to="/"><img src={require('../../assets/images/logo.svg')} alt="logo" /></Link>
+                <Link className="navbar-brand brand-logo-mini" to="/"><img src={require('../../assets/images/logo-mini.svg')} alt="logo" /></Link>
+              </div>
+              <div className="navbar-menu-wrapper d-flex align-items-stretch">
+                <button className="navbar-toggler navbar-toggler align-self-center" type="button" onClick={ () => document.body.classList.toggle('sidebar-icon-only') }>
+                  <span className="mdi mdi-menu"></span>
+                </button>
+                <div className="search-field d-none d-md-block">
+                  <form className="d-flex align-items-center h-100" action="#">
+                    <div className="input-group">
+                      <div className="input-group-prepend bg-transparent">
+                        <i className="input-group-text border-0 mdi mdi-magnify"></i>
+                      </div>
+                      <input type="text" className="form-control bg-transparent border-0" placeholder="Search projects"/>
+                    </div>
+                  </form>
+                </div>
+                <ul className="navbar-nav navbar-nav-right">
+                  <li className="nav-item nav-profile d-none d-xl-flex">
+                    <Dropdown alignRight>
+                      <Dropdown.Toggle className="nav-link count-indicator">
+                        Reports
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className="preview-list navbar-dropdown">
+                        <Dropdown.Item className="dropdown-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <i className="mdi mdi-file-pdf mr-2"></i>PDF
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                        <i className="mdi mdi-file-excel mr-2"></i>Excel
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <i className="mdi mdi-file-word mr-2"></i>doc
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </li>
+                  <li className="nav-item nav-profile d-none d-xl-flex">
+                    <Dropdown alignRight>
+                      <Dropdown.Toggle className="nav-link count-indicator">
+                        Projects
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className="preview-list navbar-dropdown">
+                        <Dropdown.Item className="dropdown-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <i className="mdi mdi-eye-outline mr-2"></i>View Project 
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <i className="mdi mdi-pencil-outline mr-2"></i>Edit Project
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </li>
+                  <li className="nav-item nav-profile nav-language d-none d-lg-flex">
+                    <Dropdown alignRight>
+                      <Dropdown.Toggle className="nav-link count-indicator">
+                        <div className="nav-language-icon">
+                          <i className="flag-icon flag-icon-us" title="us" id="us"></i>
+                        </div>
+                        <div className="nav-language-text">
+                          <p className="mb-1 text-black">English</p>
+                        </div>
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className="preview-list navbar-dropdown">
+                        <Dropdown.Item className="dropdown-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <div className="nav-language-icon mr-2">
+                            <i className="flag-icon flag-icon-ae" title="ae" id="ae"></i>
+                          </div>
+                          <div className="nav-language-text">
+                            <p className="mb-1 text-black">Arabic</p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <div className="nav-language-icon mr-2">
+                            <i className="flag-icon flag-icon-gb" title="GB" id="gb"></i>
+                          </div>
+                          <div className="nav-language-text">
+                            <p className="mb-1 text-black">English</p>
+                          </div>
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </li>
+      
+                  <li className="nav-item nav-profile nav-language">
+                    <Dropdown alignRight>
+                      <Dropdown.Toggle className="nav-link count-indicator">
+                        <div className="nav-profile-img">
+                            <img src={require("../../assets/images/faces/face28.png")} alt="profile" />
+                          </div>
+                          <div className="nav-profile-text">
+                            <p className="mb-1 text-black">Henry Klein</p>
+                        </div>
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className="preview-list navbar-dropdown">
+                        <div className="p-3 text-center bg-primary">
+                          <img className="img-avatar img-avatar48 img-avatar-thumb" src={require("../../assets/images/faces/face28.png")} alt=""/>
+                        </div>
+                        <div className="p-2">
+                          <h5 className="dropdown-header text-uppercase pl-2 text-dark">User Options</h5>
+                          <Dropdown.Item className="dropdown-item d-flex align-items-center justify-content-between" href="!#" onClick={evt =>evt.preventDefault()}>
+                            <span>Inbox</span>
+                            <span className="p-0">
+                              <span className="badge badge-primary">3</span>
+                              <i className="mdi mdi-email-open-outline ml-1"></i>
+                            </span>
+                          </Dropdown.Item>
+                          <Dropdown.Item className="dropdown-item d-flex align-items-center justify-content-between" href="!#" onClick={evt =>evt.preventDefault()}>
+                            <span>Profile</span>
+                            <span className="p-0">
+                              <span className="badge badge-success">1</span>
+                              <i className="mdi mdi-account-outline ml-1"></i>
+                            </span>
+                          </Dropdown.Item>
+                          <Dropdown.Item className="dropdown-item d-flex align-items-center justify-content-between" href="!#" onClick={evt =>evt.preventDefault()}>
+                            <span>Settings</span>
+                            <i className="mdi mdi-settings"></i>
+                          </Dropdown.Item>
+                          <div role="separator" className="dropdown-divider"></div>
+                          <h5 className="dropdown-header text-uppercase  pl-2 text-dark mt-2">Actions</h5>
+                          <Dropdown.Item className="dropdown-item d-flex align-items-center justify-content-between" href="!#" onClick={evt =>evt.preventDefault()}>
+                            <span>Lock Account</span>
+                            <i className="mdi mdi-lock ml-1"></i>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="dropdown-item d-flex align-items-center justify-content-between" href="!#" onClick={evt =>evt.preventDefault()}>
+                            <span>Log Out</span>
+                            <i className="mdi mdi-logout ml-1"></i>
+                          </Dropdown.Item>
+                        </div>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </li>
+                  <li className="nav-item">
+                    <Dropdown alignRight>
+                      <Dropdown.Toggle className="nav-link count-indicator hide-carret">
+                        <i className="mdi mdi-email-outline"></i>
+                        <span className="count-symbol bg-warning"></span>
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className="preview-list navbar-dropdown">
+                        <h6 className="p-3 bg-primary text-white py-4 mb-0">Messages</h6>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <img src={require("../../assets/images/faces/face4.jpg")} alt="user" className="profile-pic"/>
+                          </div>
+                          <div className="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                            <h6 className="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
+                            <p className="text-gray mb-0">
+                              1 Minutes ago
+                            </p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <img src={require("../../assets/images/faces/face2.jpg")} alt="user" className="profile-pic"/>
+                          </div>
+                          <div className="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                            <h6 className="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
+                            <p className="text-gray mb-0">
+                              15 Minutes ago
+                            </p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <img src={require("../../assets/images/faces/face3.jpg")} alt="user" className="profile-pic"/>
+                          </div>
+                          <div className="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                            <h6 className="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>
+                            <p className="text-gray mb-0">
+                              18 Minutes ago
+                            </p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <h6 className="p-3 mb-0 text-center cursor-pointer">4 new messages</h6>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </li>
+                  <li className="nav-item">
+                    <Dropdown alignRight>
+                      <Dropdown.Toggle className="nav-link count-indicator hide-carret">
+                        <i className="mdi mdi-bell-outline"></i>
+                        <span className="count-symbol bg-danger"></span>
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className="dropdown-menu navbar-dropdown preview-list">
+                        <h6 className="p-3 mb-0 bg-primary text-white py-4">Notifications</h6>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <div className="preview-icon bg-success">
+                              <i className="mdi mdi-calendar"></i>
+                            </div>
+                          </div>
+                          <div className="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                            <h6 className="preview-subject font-weight-normal mb-1">Event today</h6>
+                            <p className="text-gray ellipsis mb-0"> Just a reminder that you have an event today </p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <div className="preview-icon bg-warning">
+                              <i className="mdi mdi-settings"></i>
+                            </div>
+                          </div>
+                          <div className="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                            <h6 className="preview-subject font-weight-normal mb-1">Settings</h6>
+                            <p className="text-gray ellipsis mb-0">
+                              Update dashboard
+                            </p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <div className="preview-icon bg-info">
+                              <i className="mdi mdi-link-variant"></i>
+                            </div>
+                          </div>
+                          <div className="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                            <h6 className="preview-subject font-weight-normal mb-1">Launch Admin</h6>
+                            <p className="text-gray ellipsis mb-0">
+                              New admin wow!
+                            </p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <h6 className="p-3 mb-0 text-center cursor-pointer">See all notifications</h6>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </li>
+                </ul>
+                <button className="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" onClick={this.toggleOffcanvas}>
+                  <span className="mdi mdi-menu"></span>
+                </button>
+              </div>
+            </nav>
+          );
+        }
+      }
+      
+      export default Navbar;
+                    
+                    
+
+                  </textarea>
+                  <h4 class="pt-4" id="leftSidebar">Sidebar</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+      import React, { Component } from 'react';
+      import { Link, withRouter } from 'react-router-dom';
+      import { Collapse } from 'react-bootstrap';
+      import { Trans } from 'react-i18next';
+      
+      class Sidebar extends Component {
+        state = {};
+      
+        toggleMenuState(menuState) {
+          if (this.state[menuState]) {
+            this.setState({[menuState] : false});
+          } else if(Object.keys(this.state).length === 0) {
+            this.setState({[menuState] : true});
+          } else {
+            Object.keys(this.state).forEach(i => {
+              this.setState({[i]: false});
+            });
+            this.setState({[menuState] : true});
+          }
+        }
+      
+        componentDidUpdate(prevProps) {
+          if (this.props.location !== prevProps.location) {
+            this.onRouteChanged();
+          }
+        }
+      
+        onRouteChanged() {
+          document.querySelector('#sidebar').classList.remove('active');
+          Object.keys(this.state).forEach(i => {
+            this.setState({[i]: false});
+          });
+      
+          const dropdownPaths = [
+            {path:'/apps', state: 'appsMenuOpen'},
+            {path:'/basic-ui', state: 'basicUiMenuOpen'},
+            {path:'/advanced-ui', state: 'advancedUiMenuOpen'},
+            {path:'/form-elements', state: 'formElementsMenuOpen'},
+            {path:'/tables', state: 'tablesMenuOpen'},
+            {path:'/maps', state: 'mapsMenuOpen'},
+            {path:'/icons', state: 'iconsMenuOpen'},
+            {path:'/charts', state: 'chartsMenuOpen'},
+            {path:'/user-pages', state: 'userPagesMenuOpen'},
+            {path:'/error-pages', state: 'errorPagesMenuOpen'},
+            {path:'/general-pages', state: 'generalPagesMenuOpen'},
+            {path:'/ecommerce', state: 'ecommercePagesMenuOpen'},
+          ];
+      
+          dropdownPaths.forEach((obj => {
+            if (this.isPathActive(obj.path)) {
+              this.setState({[obj.state] : true})
+            }
+          }));
+        
+        } 
+        render () {
+          return (
+            <nav className="sidebar sidebar-offcanvas" id="sidebar">
+              <ul className="nav">
+                <li className="nav-item nav-category"><Trans>Main</Trans></li>
+                <li className={ this.isPathActive('/dashboard') ? 'nav-item active' : 'nav-item' }>
+                  <Link className="nav-link" to="/dashboard">
+                    <span className="icon-bg"><i className="mdi mdi-cube menu-icon"></i></span>
+                    <span className="menu-title"><Trans>Dashboard</Trans></span>
+                  </Link>
+                </li>
+                <li className="nav-item nav-category"><Trans>UI Features</Trans></li>
+                <li className={ this.isPathActive('/basic-ui') ? 'nav-item active' : 'nav-item' }>
+                  <div className={ this.state.basicUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('basicUiMenuOpen') } data-toggle="collapse">
+                    <span className="icon-bg"><i className="mdi mdi-crosshairs-gps menu-icon"></i></span>
+                    <span className="menu-title"><Trans>Basic UI Elements</Trans></span>
+                    <i className="menu-arrow"></i>
+                  </div>
+                  <Collapse in={ this.state.basicUiMenuOpen }>
+                    <ul className="nav flex-column sub-menu">
+                      <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/buttons') ? 'nav-link active' : 'nav-link' } to="/basic-ui/buttons"><Trans>Buttons</Trans></Link></li>
+                      <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/dropdowns') ? 'nav-link active' : 'nav-link' } to="/basic-ui/dropdowns"><Trans>Dropdowns</Trans></Link></li>
+                      <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/typography') ? 'nav-link active' : 'nav-link' } to="/basic-ui/typography"><Trans>Typography</Trans></Link></li>
+                    </ul>
+                  </Collapse>
+                </li>
+                <li className={ this.isPathActive('/icons') ? 'nav-item active' : 'nav-item' }>
+                  <div className={ this.state.iconsMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('iconsMenuOpen') } data-toggle="collapse">
+                    <span className="icon-bg"><i className="mdi mdi-contacts menu-icon"></i></span>
+                    <span className="menu-title"><Trans>Icons</Trans></span>
+                    <i className="menu-arrow"></i>
+                  </div>
+                  <Collapse in={ this.state.iconsMenuOpen }>
+                    <ul className="nav flex-column sub-menu">
+                      <li className="nav-item"> <Link className={ this.isPathActive('/icons/mdi') ? 'nav-link active' : 'nav-link' } to="/icons/mdi"><Trans>Material</Trans></Link></li>
+                    </ul>
+                  </Collapse>
+                </li>
+                <li className={ this.isPathActive('/form-elements') ? 'nav-item active' : 'nav-item' }>
+                  <div className={ this.state.formElementsMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('formElementsMenuOpen') } data-toggle="collapse">
+                    <span className="icon-bg"><i className="mdi mdi-format-list-bulleted menu-icon"></i></span>
+                    <span className="menu-title"><Trans>Form elements</Trans></span>
+                    <i className="menu-arrow"></i>
+                  </div>
+                  <Collapse in={ this.state.formElementsMenuOpen }>
+                    <ul className="nav flex-column sub-menu">
+                      <li className="nav-item"> <Link className={ this.isPathActive('/form-elements/basic-elements') ? 'nav-link active' : 'nav-link' } to="/form-elements/basic-elements"><Trans>Basic Elements</Trans></Link></li>
+                    </ul>
+                  </Collapse>
+                </li>
+                <li className="nav-item nav-category"><Trans>Data Representation</Trans></li>
+                <li className={ this.isPathActive('/charts') ? 'nav-item active' : 'nav-item' }>
+                  <div className={ this.state.chartsMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('chartsMenuOpen') } data-toggle="collapse">
+                    <span className="icon-bg"><i className="mdi mdi-chart-bar menu-icon"></i></span>
+                    <span className="menu-title"><Trans>Charts</Trans></span>
+                    <i className="menu-arrow"></i>
+                  </div>
+                  <Collapse in={ this.state.chartsMenuOpen }>
+                    <ul className="nav flex-column sub-menu">
+                      <li className="nav-item"> <Link className={ this.isPathActive('/charts/chart-js') ? 'nav-link active' : 'nav-link' } to="/charts/chart-js"><Trans>Chart Js</Trans></Link></li>
+                    </ul>
+                  </Collapse>
+                </li>
+                <li className={ this.isPathActive('/tables') ? 'nav-item active' : 'nav-item' }>
+                  <div className={ this.state.tablesMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('tablesMenuOpen') } data-toggle="collapse">
+                    <span className="icon-bg"><i className="mdi mdi-table-large menu-icon"></i></span>
+                    <span className="menu-title"><Trans>Tables</Trans></span>
+                    <i className="menu-arrow"></i>
+                  </div>
+                  <Collapse in={ this.state.tablesMenuOpen }>
+                    <ul className="nav flex-column sub-menu">
+                      <li className="nav-item"> <Link className={ this.isPathActive('/tables/basic-table') ? 'nav-link active' : 'nav-link' } to="/tables/basic-table"><Trans>Basic Table</Trans></Link></li>
+                    </ul>
+                  </Collapse>
+                </li>
+                <li className="nav-item nav-category">Sample Pages</li>
+                <li className={ this.isPathActive('/user-pages') ? 'nav-item active' : 'nav-item' }>
+                  <div className={ this.state.userPagesMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('userPagesMenuOpen') } data-toggle="collapse">
+                    <span className="icon-bg"><i className="mdi mdi-lock menu-icon"></i></span>
+                    <span className="menu-title"><Trans>User Pages</Trans></span>
+                    <i className="menu-arrow"></i>
+                  </div>
+                  <Collapse in={ this.state.userPagesMenuOpen }>
+                    <ul className="nav flex-column sub-menu">
+                      <li className="nav-item"> <Link className={ this.isPathActive('/user-pages/login-1') ? 'nav-link active' : 'nav-link' } to="/user-pages/login-1"><Trans>Login</Trans></Link></li>
+                      <li className="nav-item"> <Link className={ this.isPathActive('/user-pages/register-1') ? 'nav-link active' : 'nav-link' } to="/user-pages/register-1"><Trans>Register</Trans></Link></li>
+                    </ul>
+                  </Collapse>
+                </li>
+                <li className={ this.isPathActive('/error-pages') ? 'nav-item active' : 'nav-item' }>
+                  <div className={ this.state.errorPagesMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('errorPagesMenuOpen') } data-toggle="collapse">
+                    <span className="icon-bg"><i className="mdi mdi-security menu-icon"></i></span>
+                    <span className="menu-title"><Trans>Error pages</Trans></span>
+                    <i className="menu-arrow"></i>
+                  </div>
+                  <Collapse in={ this.state.errorPagesMenuOpen }>
+                    <ul className="nav flex-column sub-menu">
+                      <li className="nav-item"> <Link className={ this.isPathActive('/error-pages/error-404') ? 'nav-link active' : 'nav-link' } to="/error-pages/error-404"><Trans>404</Trans></Link></li>
+                      <li className="nav-item"> <Link className={ this.isPathActive('/error-pages/error-500') ? 'nav-link active' : 'nav-link' } to="/error-pages/error-500"><Trans>500</Trans></Link></li>
+                    </ul>
+                  </Collapse>
+                </li>
+                <li className="nav-item documentation-link">
+                  <a className="nav-link" href="http://bootstrapdash.com/demo/connect-plus-react-free/documentation/documentation.html">
+                    <span className="icon-bg">
+                      <i className="mdi mdi-file-document-box menu-icon"></i>
+                    </span>
+                    <span className="menu-title"><Trans>Documentation</Trans></span>
+                  </a>
+                </li>
+                <li className="nav-item sidebar-user-actions">
+                  <div className="user-details">
+                    <div className="d-flex justify-content-between align-items-center">
+                      <div>
+                        <div className="d-flex align-items-center">
+                          <div className="sidebar-profile-img">
+                            <img src={require("../../assets/images/faces/face28.png")} alt="profile" />
+                          </div>
+                          <div className="sidebar-profile-text">
+                            <p className="mb-1"><Trans>Henry Klein</Trans></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="badge badge-danger">3</div>
+                    </div>
+                  </div>
+                </li>
+                <li className="nav-item sidebar-user-actions">
+                  <div className="sidebar-user-menu">
+                    <a href="!#" onClick={event => event.preventDefault()} className="nav-link"><i className="mdi mdi-settings menu-icon"></i>
+                      <span className="menu-title"><Trans>Settings</Trans></span>
+                    </a>
+                  </div>
+                </li>
+                <li className="nav-item sidebar-user-actions">
+                  <div className="sidebar-user-menu">
+                    <a href="!#" onClick={event => event.preventDefault()} className="nav-link"><i className="mdi mdi-speedometer menu-icon"></i>
+                      <span className="menu-title"><Trans>Take Tour</Trans></span></a>
+                  </div>
+                </li>
+                <li className="nav-item sidebar-user-actions">
+                  <div className="sidebar-user-menu">
+                    <a href="!#" onClick={event => event.preventDefault()} className="nav-link"><i className="mdi mdi-logout menu-icon"></i>
+                      <span className="menu-title"><Trans>Log Out</Trans></span></a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          );
+        }
+      
+        isPathActive(path) {
+          return this.props.location.pathname.startsWith(path);
+        }
+      
+        componentDidMount() {
+          this.onRouteChanged();
+          // add className 'hover-open' to sidebar navitem while hover in sidebar-icon-only menu
+          const body = document.querySelector('body');
+          document.querySelectorAll('.sidebar .nav-item').forEach((el) => {
+            
+            el.addEventListener('mouseover', function() {
+              if(body.classList.contains('sidebar-icon-only')) {
+                el.classList.add('hover-open');
+              }
+            });
+            el.addEventListener('mouseout', function() {
+              if(body.classList.contains('sidebar-icon-only')) {
+                el.classList.remove('hover-open');
+              }
+            });
+          });
+        }
+      
+      }
+      
+      export default withRouter(Sidebar);
+                  </textarea>
+                  <h4 class="pt-4" id="footer">Footer</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+      import React, { Component } from 'react';
+      import { Trans } from 'react-i18next';
+      
+      class Footer extends Component {
+        render () {
+          return (
+            <footer className="footer">
+              <div className="container-fluid">
+                <div className="d-sm-flex justify-content-center justify-content-sm-between py-2 w-100">
+                  <span className="text-muted text-center text-sm-left d-block d-sm-inline-block"><Trans>Copyright</Trans> © <a href="https://www.bootstrapdash.com/" target="_blank" rel="noopener noreferrer"><Trans>bootstrapdash.com</Trans> </a>2020</span>
+                  <span className="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"><Trans>Free</Trans> <a href="https://www.bootstrapdash.com/react-admin-templates/" target="_blank" rel="noopener noreferrer"> <Trans>react admin</Trans> </a> <Trans>templates from BootstrapDash.com.</Trans>  </span>
+                </div>
+              </div>
+            </footer>
+          );
+        }
+      }
+      
+      export default Footer;
+                  </textarea>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h3 id="customerSupport" class="mb-4">Customer Support</h3>
+                  <p>If you face any issue while building your dashboard with Connect Plus React Admin, please contact us via <a href="https://bootstrapdash.freshdesk.com/support/tickets/new" target="_blank">Bootstrapdash support form</a>.</p>
+                  <p>We will respond to you as quickly as we can. Thank you.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/mode/python/python.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
