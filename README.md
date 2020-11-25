@@ -47,7 +47,7 @@ connect-plus-react-free-admin-template/
   ├── documentation
   ├── LICENSE
   ├── README.md
-
+```
 
 ## How to use Connect Plus React Free?
 
