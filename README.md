@@ -30,6 +30,7 @@ Connect Plus React free is released under MIT license. This is a free react admi
 ## Like what you see?
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
+```
 connect-plus-react-free-admin-template/
   ├── template
     ├── demo_1
